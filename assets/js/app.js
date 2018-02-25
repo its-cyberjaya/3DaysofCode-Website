@@ -51,34 +51,35 @@ $(window).scroll(function(){
 		$("#header").css("opacity",val);
 		
 		// Info 2 tittle effect
-		var info1scroll = CalculateDownShow($('#info-1'),$(window).outerHeight()/2);
-		var val = -1 * RoundOffLower(150- (info1scroll * -150),0);
+		var info1scroll = CalculateDownShow($('#info-1'),$(window).outerHeight()/3);
+		console.log(info1scroll);
+		var val = -1 * RoundOffLower(20 - (info1scroll * -20),0);
 		$("#info-1 .info-title").css("margin-left",val);
 
 		// Info 1 content effect - 1
-		var info1scroll = CalculateDownShow($('#info-1'),$(window).outerHeight()/2);
-		var val = RoundOffLower(150 - (info1scroll * -150),0);
+		var info1scroll = CalculateDownShow($('#info-1'),$(window).outerHeight()/3);
+		var val = RoundOffLower(20 - (info1scroll * -20),0);
 		$("#info-1 .info-content ul .odd").css("margin-left",val);
 		// Info 1 content effect - 2
-		var val = RoundOffLower(200 - (info1scroll * -200),0);
+		var val = RoundOffLower(30 - (info1scroll * -20),0);
 		$("#info-1 .info-content ul .even").css("margin-left",val);
 
 		// Info 2 title effect
-		var info2scroll = CalculateDownShow($('#info-2'),1400);
-		var val = RoundOffLower(300 - (info2scroll * -300),0);
-		$("#info-2 .info-title").css("margin-left",val);
+		var info2scroll = CalculateDownShow($('#info-2'),1000);
+		var val = RoundOffLower(50 - (info2scroll * - 100),0);
+		$("#info-2 .info-title").css("margin-top",val);
 		// Info 2 content effect
-		var val = RoundOffLower(150 - (info2scroll * -150),0);
-		$("#info-2 .info-content").css("margin-right",val);
+		// var val = RoundOffLower(150 - (info2scroll * -150),0);
+		// $("#info-2 .info-content").css("margin-right",val);
 		// Info 2 
-		var val = RoundOffLower(200 - (info2scroll * -200),0);
+		var val = RoundOffLower(50 - (info2scroll * -60),0);
 		$("#info-2 .info-button .btn-info-details").css("margin-left",val);
 
-		var val = RoundOffLower(200 - (info2scroll * -200),0);
+		var val = RoundOffLower(50 - (info2scroll * -60),0);
 		$("#info-2 .info-button .btn-info-register").css("margin-right",val);
 
 		// Info 2 prize effect
-		if(scrollY >= 1300){
+		if(scrollY >= 1100){
 			var element = $('#info-2 .info-prize ul li');
 			for (var i = element.length - 1; i >= 0; i--) {
 				element[i].style.transform = "scale(1.0)";
