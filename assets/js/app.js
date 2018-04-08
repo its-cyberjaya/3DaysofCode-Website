@@ -52,7 +52,7 @@ $(window).scroll(function(){
 		
 		// Info 2 tittle effect
 		var info1scroll = CalculateDownShow($('#info-1'),$(window).outerHeight()/3);
-		console.log(info1scroll);
+		// console.log(info1scroll);
 		var val = -1 * RoundOffLower(20 - (info1scroll * -20),0);
 		$("#info-1 .info-title").css("margin-left",val);
 

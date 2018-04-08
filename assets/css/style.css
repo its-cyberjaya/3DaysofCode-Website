@@ -124,17 +124,19 @@ a {
   font-family: 'Titillium Web', sans-serif; }
 
 @media only screen and (max-width: 600px) {
-  .nav-bar .logo {
-    display: none; }
-  .nav-bar .btn-detail {
-    padding: 6px;
-    border: solid 2px #02c1d2;
-    margin: 5px;
-    font-size: 10px;
-    color: black;
-    border-radius: 5px; }
-  .nav-bar .btn-register {
-    display: inherit; }
+  .nav-bar {
+    position: absolute; }
+    .nav-bar .logo {
+      display: none; }
+    .nav-bar .btn-detail {
+      padding: 6px;
+      border: solid 2px #02c1d2;
+      margin: 5px;
+      font-size: 10px;
+      color: black;
+      border-radius: 5px; }
+    .nav-bar .btn-register {
+      display: inherit; }
 
   #header {
     padding-top: 42px; } }
